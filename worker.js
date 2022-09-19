@@ -8,7 +8,6 @@ socket.onopen = () => console.log("connected\n");
 
 
 socket.onmessage = function ({ data }) {
-    console.log(JSON.parse(data));
   let {
     UserCode: UserID,
     DeviceID,
