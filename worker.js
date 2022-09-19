@@ -19,7 +19,7 @@ socket.onmessage = function ({ data }) {
   let str = `${UserID},${DeviceID},${LogTime},${SerialNumber}`;
   console.log(str);
   let path = "logs.csv";
-  // fs.appendFileSync(path, str + "\n");
+  fs.appendFileSync(path, str + "\n");
 
   // let Hash = '$2y$10$RQ0d7Yo1ad/aTm2pEx3QvuGatA6t0qqH76m7VXYGkNjzVYqNGAQ.K';
 
