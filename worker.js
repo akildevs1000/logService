@@ -1,10 +1,11 @@
 const WebSocket = require("ws");
 require('dotenv').config()
 // const axios = require("axios").default;
-socket.onopen = () => console.log("connected\n");
 
 const fs = require("fs");
 let socket = new WebSocket(process.env.ENDPOINT);
+socket.onopen = () => console.log("connected\n");
+
 
 socket.onmessage = function ({ data }) {
     console.log(JSON.parse(data));
